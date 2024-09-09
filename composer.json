@@ -1,0 +1,42 @@
+{
+    "name": "sxbrsky/crypto",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "crypto",
+        "signer",
+        "crypto-signer"
+    ],
+    "authors": [
+        {
+            "name": "Dominik Szamburski",
+            "email": "dominikszamburski99@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "dev-master",
+        "phpstan/phpstan": "2.0.x-dev",
+        "phpunit/phpunit": "11.4.x-dev"
+    },
+    "provide": {
+        "psr/http-message-implementation": "2.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Sxbrsky\\Crypto\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sxbrsky\\Crypto\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
